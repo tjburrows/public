@@ -351,7 +351,10 @@ module openconfig-system {
     leaf software-version {
         type string;
         description
-          "Operating system version of the primary routing engine.";
+          "Operating system version of the currently active controller
+          of the device.  It is required that this value matches the
+          value of the state/software-version leaf in the component
+          of type OPERATING_SYSTEM.";
     }
   }
 
